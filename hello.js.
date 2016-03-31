@@ -1,12 +1,6 @@
-{
-"name": "learn-travis-seansanders",
-"description": "Simple Travis-CI check for JSHint (Code Linting)",
-"author": "Sean Sanders",
-"version": "0.0.1",
-"devDependencies": {
-	"jshint": "^2.6.0",
-},
-"scripts": {
-	"test": "./node_modules/jshint/bin/jshint hello.js"
-}
-}
+var http = require('http');
+http.createServer(function (req, res) {
+	res.writeHead(200, {'Content-Type': 'text/plain'})
+	res.end('Hello Travis!\n'); //this will fail travis
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');

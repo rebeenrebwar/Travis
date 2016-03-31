@@ -1,12 +1,25 @@
-{
-"name": "learn-travis-seansanders",
-"description": "Simple Travis-CI check for JSHint (Code Linting)",
-"author": "Rebeen Rebwar",
-"version": "0.0.1",
-"devDependencies": {
-	"jshint": "^2.6.0",
-},
-"scripts": {
-	"test": "./node_modules/jshint/bin/jshint hello.js"
-}
-}
+<HTML>
+<HEAD>
+<TITLE>Hello World With JavaScript</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+	<FORM Name="Form1" ACTION="">
+	<INPUT TYPE=BUTTON VALUE="Click me" NAME="BtnHello" OnClick="Hello()">
+	</FORM>
+
+</CENTER>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+    function Hello ()
+    {
+        alert("Hello World!")
+    }
+
+//-->
+<SCRIPT>
+
+</BODY>
+</HTML>

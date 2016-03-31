@@ -8,14 +8,6 @@ node_js:
 before_script:
  # - npm link
  # - mkdir -p shippable/codecoverage
-before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -qq python3.2 python2.7
-
-python:
- - "2.7"
-
-script: ./run_build.sh
 
 after_success:
   - echo $TOTO
